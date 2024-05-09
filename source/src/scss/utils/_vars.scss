@@ -1,0 +1,24 @@
+// breakpoints
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 768px;
+$mobile: 576px;
+
+:root {
+	--ff: 'Open Sans', sans-serif;
+	
+	--transition: .3s all ease-in-out;
+
+	--c-white: #fff;
+	--c-black: #000; 
+	--c-dark: #021c1e; 
+	--c-grey: #cdd0dd; 
+	--c-green: #2c7873;
+	--c-lightgreen: #70c394;
+	--c-light: #fcfcfa;
+
+	--c-gradient-light: linear-gradient(0deg, rgba(252,252,250,0.4) 0%, rgba(215,255,232,0.4) 35%, rgba(126,204,199,0.4) 100%);
+
+}
+
+

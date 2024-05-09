@@ -1,0 +1,186 @@
+.navbar-container {
+    max-width: 80vw !important;
+    width: 20%;
+    position: relative;
+
+    .burger-box {
+        position: fixed;
+        z-index: 11;
+        background: var(--c-lightgreen);
+        border-bottom-right-radius: 5rem;
+    }
+
+    .navbar-burger {
+        display: none;
+        background: transparent;
+        margin: 20rem;
+    
+        &.active {
+            left: 120rem;
+        }
+    
+        &.active:before {
+            transform: rotate(45deg);
+            top: 13rem;
+            background: var(--c-light);
+        }
+        &.active:after {
+            transform: rotate(-45deg);
+            bottom: 13rem;
+            background: var(--c-light);
+        }
+        &.active span {
+            transform: scale(0);
+            background: var(--c-light);
+        }
+    
+        @include tablet {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            width: 40rem;
+            height: 29rem;
+            position: relative;
+            z-index: 10;
+             
+            & span {
+                position: absolute;
+                background: var(--c-light);
+                left: 0;
+                width: 100%;
+                height: 3rem;
+                top: 13rem;
+                transition: var(--transition);
+            }
+            
+            &::before,
+            &::after {
+                content: "";
+                background: var(--c-light);
+                position: absolute;
+                width: 100%;
+                height: 3rem;
+                left: 0;
+                transition: var(--transition);
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+        }
+    }
+    
+    .navbar {
+        position: fixed;
+        left: 5%;
+        top: 0;
+        height: 100vh;
+        max-height: 100vh !important;
+        max-width: 80vw !important;
+        width: 20%;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9;
+        padding: 20rem 0;
+        transition: var(--transition);
+        background: var(--c-lightgreen);
+    
+        @include tablet {
+            left: -100%;
+            width: 320rem;
+    
+            &.active {
+                left: 0;
+                transition: var(--transition);
+            }
+        }
+    
+        &__logo {
+            max-width: 120rem;
+            position: relative;
+            margin-top: 15rem;
+            span {
+                display: block;
+                position: absolute;
+                left: 15%;
+                width: 70%;
+                height: 2rem;
+                background: var(--c-light);
+            }
+
+            @include tablet {
+                opacity: 0;
+            }
+        }
+    
+        &__nav {
+            transition: var(--transition);
+            overflow: auto;
+            padding: 10rem 0; 
+            width: 100%;  
+        }
+    
+        &__ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__li {
+            width: 100%;
+            text-align: center;
+            padding: 20rem 0;
+            border-bottom: 2rem solid var(--c-light);
+            &:first-child {
+                border-top: 2rem solid var(--c-light);
+            }
+            &:hover {
+                background: var(--c-light);
+            }
+        }
+    
+        &__a {
+            color: var(--c-dark);
+            text-shadow: 0 0 2rem var(--c-light);
+            font-size: 24rem;
+            font-weight: 700;
+            transition: var(--transition);
+            position: relative;
+    
+            @include tablet {
+                
+            }
+    
+            @include tablet-small {
+                color: var(--c-light);
+                font-size: 30rem;
+            }
+        }
+    
+        &__copyright {
+            color: var(--c-black);
+            font-size: 16rem;
+            margin-bottom: 15rem;
+         }
+    
+        &__socials { 
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 30rem;
+            transition: var(--transition);
+            & svg:hover {
+                path {
+                    fill: var(--c-light);
+                }
+            }
+        }
+    }
+}
+
+

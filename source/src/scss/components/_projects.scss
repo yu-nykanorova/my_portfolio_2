@@ -1,0 +1,91 @@
+.projects {
+    text-align: center;
+
+	&__title { 
+        display: inline-block;
+        position: relative;
+    }
+	&-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30rem;
+        @include tablet-small {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+     }
+
+	&-item { 
+        border-radius: 5rem;
+        padding: 0;
+        max-width: 300rem;
+        @include tablet-small {
+            flex: 0 0 calc((100% - 30rem)/2);
+        }
+        @include mobile {
+            flex: 0 0 100%;
+        }
+
+        &__image { 
+            border-radius: 5rem;
+            position: relative;
+            height: 100%;
+            img {
+                border-radius: 5rem;
+                height: 100%;
+            }
+        }
+        &__info {
+            background: var(--c-gradient-light);
+            border-bottom-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+            position: absolute;
+            display: block;
+            bottom: 0;
+            width: 100%;
+            padding: 5rem;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        &__title { 
+            color: var(--c-dark);
+        }
+
+        &__desc {
+            color: var(--c-dark);
+        }
+    }
+
+	&__btn {
+        margin-top: 20rem;
+        color: var(--c-light);
+        font-size: 18rem;
+        font-weight: 600;
+        background: transparent;
+        padding: 12rem 18rem;
+        outline: 3rem solid var(--c-lightgreen);
+        border-radius: 15rem;
+        max-width: 200rem;
+        text-align: center;
+        &:hover {
+            transform: scale(1.05);
+            color: var(--c-light);
+        }
+    }
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide-project {
+    display: none;
+}
