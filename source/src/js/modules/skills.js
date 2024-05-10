@@ -18,6 +18,9 @@ $(document).ready(function(){
 		},
 		768:{
 			items:6
+		},
+		992:{
+			items:8
 		}
 	  }
 	});

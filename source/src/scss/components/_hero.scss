@@ -15,11 +15,11 @@
         align-self: stretch;
         flex: 0 0 calc(50% - 10rem);
         display: flex;
-        padding: 20rem;
+        padding: 50rem;
         flex-direction: column;
         justify-content: center;
         border-radius: 5rem;
-        background: var(--c-gradient-light);
+        background: var(--c-light-transp);
         box-shadow: 5rem 2rem 15rem 0 rgba(0, 0, 0, 0.25);
         @include tablet-small {
             align-items: center;
@@ -31,20 +31,21 @@
     }
 
 	&__title {
-        color: var(--c-light);
+        color: var(--c-dark);
         font-size: 44rem;
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: 20rem;
-        text-shadow: 5rem 2rem 5rem rgba(0, 0, 0, 0.25);
+        text-shadow: 5rem 2rem 5rem rgba(255, 255, 255, 0.5);
         @include tablet-small {
             font-size: 44rem;
-            font-weight: 600;
+            font-weight: 700;
         }
         h1 {
             color: var(--c-lightgreen);
             display: inline-block;
             font-size: 44rem;
             font-weight: 700;
+            text-shadow: 3rem 1rem 1rem rgba(0, 0, 0, 0.7), 5rem 2rem 5rem rgba(255, 255, 255, 0.2);
             @include tablet-small {
                 font-size: 44rem;
                 font-weight: 600;
@@ -52,13 +53,12 @@
         }
     }
     &__desc {
-        color: var(--c-light);
-        font-size: 26rem;
-        font-weight: 400;
+        color: var(--c-dark);
+        font-size: 20rem;
+        font-weight: 500;
         margin-bottom: 40rem;
         @include tablet-small {
             margin-bottom: 25rem;
-            font-size: 28rem;
         }
     }
 
@@ -67,6 +67,10 @@
         align-items: center;
         justify-content: flex-start;
         gap: 20rem;
+        @include desktop-small {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
 
     &__btn-contact, &__btn-cv {
@@ -82,16 +86,17 @@
 	&__btn-contact { 
         color: var(--c-light);
         background: var(--c-dark);
-        padding: 15rem 18rem;
+        padding: 15rem 25rem;
         &:hover {
             transform: scale(1.05);
-            color: var(--c-light);
+            background: var(--c-lightgreen);
+            color: var(--c-dark);
         }
     }
 	&__btn-cv { 
-        color: var(--c-light);
+        color: var(--c-dark);
         background: transparent;
-        outline: 3rem solid var(--c-lightgreen);
+        outline: 3rem solid var(--c-dark);
         padding: 12rem 18rem;
         &:hover {
             transform: scale(1.05);
@@ -106,7 +111,6 @@
         flex: 0 0 calc(50% - 10rem);
         align-self: stretch;
         padding: 0 20rem;
-        background: var(--c-lightgreen); 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -121,10 +125,14 @@
 
         img {
            max-width: 300rem;
+           @include desktop-small {
+                align-self: flex-end;
+            
+            }
            @include tablet-small {
                 max-width: 200rem;
                 transform: scale(1.6) translateY(15%);
-        }
+            }
         }
     }
 }

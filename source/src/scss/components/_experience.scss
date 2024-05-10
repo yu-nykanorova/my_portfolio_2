@@ -11,14 +11,14 @@
         align-items: center;
         @include tablet {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
             gap: 20rem;
         }
     }
 	&__item {
         padding: 32rem;
         border-radius: 5rem;
-        background: var(--c-gradient-light);
+        background: var(--c-light-transp);
         box-shadow: 5rem 2rem 15rem 0 rgba(0, 0, 0, 0.25);
         flex: 0 0 30%;
         text-align: center;
@@ -30,13 +30,13 @@
     }
     &__period {
         color: var(--c-lightgreen);
-        text-shadow: 0 0 1rem var(--c-dark);
+        text-shadow: 2rem 1rem 2rem var(--c-dark);
         font-size: 30rem;
         font-weight: 600;
         margin-bottom: 10rem;
     }
 	&__name {
-        color: var(--c-light);
+        color: var(--c-dark);
         font-size: 24rem;
         font-weight: 700;
         margin-bottom: 10rem;

@@ -13,7 +13,7 @@
     .navbar-burger {
         display: none;
         background: transparent;
-        margin: 20rem;
+        margin: 10rem;
     
         &.active {
             left: 120rem;
@@ -88,7 +88,7 @@
         z-index: 9;
         padding: 20rem 0;
         transition: var(--transition);
-        background: var(--c-lightgreen);
+        background: var(--c-gradient-dark);
     
         @include tablet {
             left: -100%;
@@ -107,8 +107,9 @@
             span {
                 display: block;
                 position: absolute;
-                left: 15%;
-                width: 70%;
+                bottom: 10rem;
+                left: 20%;
+                width: 60%;
                 height: 2rem;
                 background: var(--c-light);
             }
@@ -140,13 +141,13 @@
                 border-top: 2rem solid var(--c-light);
             }
             &:hover {
-                background: var(--c-light);
+                background: var(--c-lightgreen);
             }
         }
     
         &__a {
-            color: var(--c-dark);
-            text-shadow: 0 0 2rem var(--c-light);
+            color: var(--c-light);
+            text-shadow: 0 0 2rem var(--c-dark);
             font-size: 24rem;
             font-weight: 700;
             transition: var(--transition);
@@ -163,7 +164,7 @@
         }
     
         &__copyright {
-            color: var(--c-black);
+            color: var(--c-white);
             font-size: 16rem;
             margin-bottom: 15rem;
          }
@@ -176,7 +177,7 @@
             transition: var(--transition);
             & svg:hover {
                 path {
-                    fill: var(--c-light);
+                    fill: var(--c-lightgreen);
                 }
             }
         }
