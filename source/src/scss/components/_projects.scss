@@ -54,13 +54,14 @@
         }
 
         &__title { 
-            margin-top: 20rem;
+            margin-bottom: 8rem;
             color: var(--c-light);
-            font-size: 22rem;
+            font-size: 18rem;
         }
 
         &__desc {
-            color: var(--c-dark);
+            color: var(--c-lightgreen);
+            font-size: 14rem;
         }
     }
 

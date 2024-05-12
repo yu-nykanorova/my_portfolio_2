@@ -89,6 +89,7 @@
 			position: absolute;
 			bottom: 3rem;
 			color: var(--c-dark);
+			font-size: 30rem;
 		}
 		&:hover {
 			transform: scale(1.2);
@@ -100,11 +101,13 @@
 
 	}
 
-	& .owl-prev span {
-		left: 7rem;
+	.owl-prev span {
+		left: 9rem;
+		top: -6rem;
 	}
 	.owl-next span {
-		right: 7rem;
+		right: 9rem;
+		top: -6rem;
 	}
 }
 
@@ -130,8 +133,8 @@
 	padding: 0 !important;
 	font: inherit;
 	background: var(--c-light);
-	width: 20rem;
-	height: 20rem;
+	width: 30rem;
+	height: 30rem;
 	border-radius: 50%;
 }
 .owl-carousel.owl-loaded {

@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".projects-item").each(function(){
         $(this).hover(function(){
-            $(this).find(".projects-item__info").toggleClass("show");
+            $(this).find(".projects-item__info").toggleClass("swing-in-bottom-bck");
         });
     });
 });

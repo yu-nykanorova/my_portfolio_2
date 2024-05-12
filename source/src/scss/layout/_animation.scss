@@ -1,0 +1,22 @@
+/**
+ * ----------------------------------------
+ * animation swing-in-bottom-bck
+ * ----------------------------------------
+ */
+ @keyframes swing-in-bottom-bck {
+    0% {
+        transform: rotateX(-70deg);
+        transform-origin: bottom;
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0);
+        transform-origin: bottom;
+        opacity: 1;
+    }
+  }
+
+.swing-in-bottom-bck {
+    animation: swing-in-bottom-bck 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+  

@@ -1,0 +1,26 @@
+.scroll_btn {
+	position: fixed;
+	bottom: -50rem;
+	right: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background: var(--c-lightgreen);
+    border: none;
+    border-radius: 5rem;
+    width: 33rem;
+    height: 44rem;
+    cursor: pointer;
+    transition: bottom .3s ease;
+    // z-index: 2;
+    &:hover {
+        svg {
+            transition: var(--transition);
+            fill: var(--c-light);
+        }
+    }
+}
+
+.show_scroll_btn {
+    bottom: 100rem;
+}

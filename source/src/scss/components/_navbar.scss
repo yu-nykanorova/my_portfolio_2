@@ -6,27 +6,34 @@
     .burger-box {
         position: fixed;
         z-index: 11;
-        background: var(--c-lightgreen);
-        border-bottom-right-radius: 5rem;
+        top: 10rem;
+        left: 10rem;
+        border-radius: 5rem;
     }
 
     .navbar-burger {
         display: none;
-        background: transparent;
-        margin: 10rem;
+        background: var(--c-lightgreen);
+        border-radius: 3rem;
+        transition: var(--transition);
+
+        &:hover {
+            background: var(--c-light);
+        }
     
         &.active {
-            left: 120rem;
+            left: 130rem;
+            background: transparent;
         }
     
         &.active:before {
             transform: rotate(45deg);
-            top: 13rem;
+            top: 15rem;
             background: var(--c-light);
         }
         &.active:after {
             transform: rotate(-45deg);
-            bottom: 13rem;
+            bottom: 15rem;
             background: var(--c-light);
         }
         &.active span {
@@ -38,36 +45,35 @@
             display: block;
             position: relative;
             cursor: pointer;
-            width: 40rem;
-            height: 29rem;
-            position: relative;
+            width: 44rem;
+            height: 33rem;
             z-index: 10;
              
             & span {
                 position: absolute;
-                background: var(--c-light);
-                left: 0;
-                width: 100%;
+                background: var(--c-dark);
+                left: 10%;
+                width: 80%;
                 height: 3rem;
-                top: 13rem;
+                top: 15rem;
                 transition: var(--transition);
             }
             
             &::before,
             &::after {
                 content: "";
-                background: var(--c-light);
+                background: var(--c-dark);
                 position: absolute;
-                width: 100%;
+                width: 80%;
                 height: 3rem;
-                left: 0;
+                left: 10%;
                 transition: var(--transition);
             }
             &::before {
-                top: 0;
+                top: 15%;
             }
             &::after {
-                bottom: 0;
+                bottom: 15%;
             }
         }
     }
