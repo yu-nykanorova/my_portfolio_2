@@ -51,6 +51,8 @@
 	max-height: 300rem;
 	float: left;
 	border-radius: 30px;
+	display: flex;
+	justify-content: center;
 	-webkit-backface-visibility: hidden;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;

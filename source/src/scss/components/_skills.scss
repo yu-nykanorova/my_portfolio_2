@@ -28,31 +28,26 @@
         gap: 10rem;
         align-items: center;
         padding: 0 0 5rem 0;
-        max-width: 100rem;
-        background: var(--c-light-transp);
+        max-width: 90rem;
+        background: var(--c-light);
         border-radius: 5rem;
         box-shadow: 5rem 2rem 15rem 0 rgba(0, 0, 0, 0.25);
         text-align: center;
         color: var(--c-dark);
         transition: var(--transition);
         height: 100%;
-        @include tablet {
-            max-width: 250rem;
-        }
+
         @include mobile {
             max-width: auto;
-        }
-        
-        &:hover {
-            color: var(--c-light);
         }
     }
 
 	&__item-image { 
         width: 100%;
         background: var(--c-gradient-dark);
-        border-radius: 5rem;
+        border-radius: 5rem 5rem 0 0;
         img {
+            border-radius: 5rem 5rem 0 0;
         }
     }
 }

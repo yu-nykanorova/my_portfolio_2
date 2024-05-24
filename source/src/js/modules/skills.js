@@ -14,14 +14,11 @@ $(document).ready(function(){
 			items:4
 		},
 		576:{
-			items:5
-		},
-		768:{
 			items:6
 		},
-		992:{
+		768:{
 			items:8
-		}
+		},
 	  }
 	});
   });

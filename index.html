@@ -16,7 +16,8 @@
 
 <body>
 	<div class="page-wrapper">
-		<div class="navbar-container">
+		<div class="container">
+			<div class="navbar-container">
 	<div class="burger-box">
 		<div class="navbar-burger">
 			<span></span>
@@ -62,20 +63,22 @@
 	</div>
 	
 
-		<section class="section hero" id="hero">
+			<section class="section hero" id="hero">
     <div class="hero__info">
         <div class="hero__title">Hi, I'm <h1>Yuliia,</h1><br> a frontend beginner</div>
         <p class="hero__desc">Currently in the process of studying HTML, CSS, JS</p>
         <div class="hero__btn">
-            <div class="btn hero__btn-contact">Contact Me</div>
-            <div class="btn hero__btn-cv">Download CV</div>
+            <a href="#contact" class="btn hero__btn-contact">Contact Me</a>
+            <a href="files/Resume_Nykanorova.pdf" class="btn hero__btn-cv" download>Download CV</a>
         </div>
     </div>
-    <div class="hero__image">
-        <img src="../../img/hero_none_bg.png" alt="hero">
+    <div class="hero__image-outer">
+        <div class="hero__image">
+            <img src="img/hero_none_bg.png" alt="hero">
+        </div>
     </div>
 </section>
-		<section class="section skills" id="skills">
+			<section class="section skills" id="skills">
     <div class="title-big underline-title skills__title">Skills</div>
     <div class="skills__list owl-carousel">
         <div class="skills__item">
@@ -94,7 +97,7 @@
             <div class="skills__item-image">
                 <img src="img/sass.png" alt="sass">
             </div>
-            <div class="title-small skills__item-title">CSS</div>
+            <div class="title-small skills__item-title">Sass/SCSS</div>
         </div>
         <div class="skills__item">
             <div class="skills__item-image">
@@ -124,11 +127,11 @@
             <div class="skills__item-image">
                 <img src="img/github.png" alt="github">
             </div>
-            <div class="title-small skills__item-title">React</div>
+            <div class="title-small skills__item-title">GitHub</div>
         </div>
     </div>
 </section>
-		<section class="section experience" id="experience">
+			<section class="section experience" id="experience">
     <div class="title-big underline-title experience__title">Experience</div>
     <div class="experience__list">
         <div class="experience__item">
@@ -148,7 +151,7 @@
         </div>
     </div>
 </section>
-		<section class="section projects" id="projects">
+			<section class="section projects" id="projects">
     <div class="title-big underline-title projects__title">Projects</div>
     <div class="projects-list">
         <div class="projects-item visible-project">
@@ -209,7 +212,7 @@
     </div>
     <button class="btn projects__btn" id="showButton">Show more</button>
 </section>
-		<section class="section contact" id="contact">
+			<section class="section contact" id="contact">
     <div class="title-big underline-title contact__title-main">Contacts</div>
     <div class="contact-container">
         <div class="contact__info">
@@ -253,9 +256,10 @@
         </form>
     </div>
 </section>
-		<div class="scroll_btn">
-    <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#021c1e"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
+			<div class="scroll_btn"> 
+    <svg xmlns="http://www.w3.org/2000/svg" height="38px" viewBox="0 -960 960 960" width="38px" fill="#fcfcfa"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
 </div>
+		</div>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

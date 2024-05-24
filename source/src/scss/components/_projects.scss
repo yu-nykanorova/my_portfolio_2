@@ -18,8 +18,9 @@
      }
 
 	&-item { 
-        border-radius: 5rem;
+        border-radius: 15rem;
         padding: 0;
+        box-shadow: 0 0 2rem 0 var(--c-light-transp);
         @include tablet-small {
             flex: 0 0 calc((100% - 30rem)/2);
         }
@@ -28,24 +29,24 @@
         }
 
         &__image { 
-            border-radius: 5rem;
+            border-radius: 15rem;
             position: relative;
             height: 100%;
             max-width: 500rem;
-
+            display: flex;
             img {
-                border-radius: 5rem;
+                border-radius: 15rem;
                 width: 100%;
                 height: 100%;
             }
         }
         &__info {
             background: var(--c-dark-transp);
-            border-bottom-left-radius: 5rem;
-            border-bottom-right-radius: 5rem;
+            border-bottom-left-radius: 15rem;
+            border-bottom-right-radius: 15rem;
             position: absolute;
             display: block;
-            bottom: 0;
+            bottom: -1rem;
             width: 100%;
             padding: 5rem;
             height: 40%;
@@ -60,7 +61,7 @@
         }
 
         &__desc {
-            color: var(--c-lightgreen);
+            color: var(--c-light);
             font-size: 14rem;
         }
     }
@@ -71,14 +72,14 @@
         font-size: 18rem;
         font-weight: 600;
         background: transparent;
-        padding: 12rem 18rem;
+        padding: 15rem 25rem;
         outline: 3rem solid var(--c-lightgreen);
         border-radius: 15rem;
         max-width: 200rem;
         text-align: center;
         &:hover {
             transform: scale(1.05);
-            color: var(--c-dark);
+            color: var(--c-white);
             background: var(--c-lightgreen);
         }
     }
